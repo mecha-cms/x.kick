@@ -12,6 +12,7 @@ if (
         $csv = 'csv' === pathinfo($f, PATHINFO_EXTENSION);
         while (false !== ($v = fgetcsv($h, 1024, $csv ? ',' : "\t"))) {
             if ($path === $v[0] && !empty($v[1])) {
+                fclose($h);
                 header('Location: ' . URL::long($v[1], false));
                 exit;
             }
