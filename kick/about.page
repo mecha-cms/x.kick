@@ -3,7 +3,7 @@ title: Redirect
 description: URL redirection files.
 author: Taufik Nurrohman
 type: Markdown
-version: 1.0.0
+version: 1.0.1
 ...
 
 Create a `kick.tsv` file in `.\lot\page` folder:
