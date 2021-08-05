@@ -6,7 +6,7 @@ if (
     is_file($f = LOT . DS . 'page' . DS . 'kick.tsv')
 ) {
     // Get current URL path to be redirected
-    $path = $url->path . $url->query . $url->hash;
+    $path = $url->path . $url->i . $url->query . $url->hash;
     // Stream now!
     if (false !== ($h = fopen($f, 'r'))) {
         $csv = 'csv' === pathinfo($f, PATHINFO_EXTENSION);

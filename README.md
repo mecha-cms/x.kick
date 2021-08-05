@@ -4,9 +4,9 @@ Redirect Extension for [Mecha](https://github.com/mecha-cms/mecha)
 Release Notes
 -------------
 
-### main
+### 1.0.1
 
- - _None._
+ - Maintenance.
 
 ### 1.0.0
 
