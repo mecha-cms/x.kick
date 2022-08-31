@@ -13,7 +13,7 @@ if (
         while (false !== ($v = fgetcsv($h, 1024, $csv ? ',' : "\t"))) {
             if ($path === $v[0] && !empty($v[1])) {
                 fclose($h);
-                header('location: ' . long($v[1]));
+                kick(long($v[1]));
                 exit;
             }
         }
